@@ -1,0 +1,217 @@
+/* Gaya Umum */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+    background-color: #121212;
+    color: #fff;
+    text-align: center;
+}
+
+/* Header */
+header {
+    background: #1f1f1f;
+    color: #fff;
+    padding: 20px 0;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2rem;
+}
+
+header nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 10px 0;
+    display: inline-flex;
+    gap: 15px;
+}
+
+header nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+header nav ul li a:hover {
+    color: #ff6347;
+}
+
+/* Search Bar */
+.search-bar {
+    margin: 15px auto;
+    max-width: 400px;
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+}
+
+.search-bar input {
+    flex: 1;
+    padding: 10px;
+    border: 1px solid #444;
+    border-radius: 5px;
+    background: #222;
+    color: #fff;
+    text-align: center;
+}
+
+.search-bar button {
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    background: #ff6347;
+    color: #fff;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.search-bar button:hover {
+    background: #e55337;
+}
+
+/* Bahagian Utama */
+main {
+    padding: 20px;
+}
+
+main h2 {
+    color: #fff;
+    font-size: 1.8rem;
+    margin-bottom: 20px;
+}
+
+.manga-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+    justify-content: center;
+}
+
+article {
+    background: #1f1f1f;
+    border: 1px solid #333;
+    border-radius: 8px;
+    padding: 15px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+    transition: transform 0.3s;
+}
+
+article:hover {
+    transform: translateY(-5px);
+}
+
+article img {
+    max-width: 100%;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+article h3 a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.2rem;
+    transition: color 0.3s;
+}
+
+article h3 a:hover {
+    color: #ff6347;
+}
+
+article p {
+    margin: 10px 0 0;
+    font-size: 0.9rem;
+    color: #bbb;
+}
+
+/* Manga Pages */
+.manga-pages {
+    display: none; /* Tersembunyi secara default */
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+    position: relative;
+}
+
+.manga-pages.active {
+    display: flex; /* Tampilkan hanya saat aktif */
+}
+
+.manga-container {
+    display: flex;
+    overflow-x: scroll; /* Scroll secara horizontal */
+    gap: 10px;
+    width: 100%;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.manga-page {
+    flex-shrink: 0; /* Agar gambar tidak menyusut */
+    width: 90%; /* Lebar gambar manga */
+    height: auto;
+    border: 2px solid #444;
+    border-radius: 5px;
+}
+
+.navigation {
+    position: absolute;
+    top: 50%;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transform: translateY(-50%);
+}
+
+button {
+    font-size: 2rem;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* Footer */
+footer {
+    background: #1f1f1f;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+    margin-top: 20px;
+}
+
+footer p {
+    margin: 0;
+    font-size: 0.9rem;
+}
+
+/* Gaya Aktif */
+.active {
+    display: flex; /* Tampilkan hanya saat aktif */
+}
+
+/* Tombol Kembali */
+.back-btn {
+    margin-top: 20px;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    background: #ff6347;
+    color: #fff;
+    cursor: pointer;
+    text-decoration: none;
+    display: inline-block;
+}
+
+.back-btn:hover {
+    background: #e55337;
+}
